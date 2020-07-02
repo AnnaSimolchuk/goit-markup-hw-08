@@ -1,0 +1,11 @@
+{
+  "SVG sparite from image directory": {
+    "prefix": "svgs",
+    "body": [
+      "<svg class=\"icon\" width="px" height="px">",
+      "  <use href="./images/sprite.svg#"></use> ",
+      "</svg>"
+    ],
+    "description": "SVG sparite from /image"
+  }
+}

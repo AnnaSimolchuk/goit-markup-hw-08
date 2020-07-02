@@ -1,0 +1,16 @@
+.main-logo {
+  @extend %link-decoration;
+}
+.logo {
+  color: $accent;
+  font-family: Raleway, sans-serif;
+  font-size: 26px;
+  line-height: 1.19;
+}
+
+.logo-two {
+  color: $primary-text-color;
+  font-family: Raleway, sans-serif;
+  font-size: 26px;
+  line-height: 1.19;
+}

@@ -1,0 +1,39 @@
+.secondary-footer {
+  align-items: baseline;
+}
+
+.secondary-footer .logos-list {
+  @extend %list;
+  @include centeredFlex(inline-flex);
+}
+
+.logos-list {
+  .logo-img:not(:last-child) {
+    margin-right: 10px;
+  }
+  .logo-link {
+    @include centeredFlex;
+    width: 44px;
+    height: 44px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      background-color: $accent;
+    }
+  }
+}
+
+.footer-text {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: $white-text-color;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}

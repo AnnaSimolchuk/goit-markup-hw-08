@@ -1,0 +1,34 @@
+.info-list,
+.contact-list {
+  @extend %list;
+}
+
+.info-list {
+  display: inline-block;
+
+  .address {
+    margin-top: 20px;
+
+    .map {
+      @extend %link-decoration;
+      color: $white-text-color;
+      font-style: normal;
+      font-size: 14px;
+      line-height: 1.7;
+    }
+  }
+}
+
+.contact-list {
+  .contact:not(:last-child) {
+    margin-top: 9px;
+    margin-bottom: 9px;
+  }
+  .footer-info {
+    @extend %link-decoration;
+    color: $footer-text-color;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.7;
+  }
+}

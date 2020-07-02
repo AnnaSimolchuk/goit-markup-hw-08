@@ -1,0 +1,57 @@
+.policy {
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.policy-label {
+  display: inline-flex;
+  align-items: center;
+}
+
+.checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+
+  &:checked + .checkbox-icon {
+    background-color: $accent;
+    border-color: transparent;
+    background-image: url(../images/checkmark.svg);
+    background-size: contain;
+    background-origin: border-box;
+  }
+
+  &:checked ~ .policy-text {
+    transform: translateX(5px);
+  }
+}
+
+.checkbox-icon {
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  margin-right: 8px;
+  border: 2px solid #212121;
+  border-radius: 2px;
+
+  transition: all 250ms $cubic;
+}
+
+.policy-text {
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: #757575;
+
+  transition: transform 250ms $cubic;
+}
+
+.policy-link {
+  color: $accent;
+  text-decoration: underline;
+}

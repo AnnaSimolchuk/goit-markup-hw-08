@@ -1,0 +1,46 @@
+.form-field {
+  position: relative;
+  margin-bottom: 28px;
+}
+
+.form-label {
+  position: absolute;
+  top: 50%;
+  left: 42px;
+  transform: translateY(-50%);
+
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.01em;
+  color: #757575;
+
+  transition: all 250ms $cubic;
+}
+
+.form-input {
+  padding: 12px 15px 12px 42px;
+  width: 448px;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  background: #ffffff;
+  border-radius: 4px;
+
+  transition: all 250ms $cubic;
+
+  &:focus + .form-label,
+  :not(:placeholder-shown) + .form-label {
+    transform: translate(-24px, -40px);
+    color: $accent;
+  }
+
+  &:focus ~ .form-icon {
+    fill: $accent;
+  }
+}
+
+.form-icon {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+}
