@@ -100,7 +100,7 @@
 }
 
 .current {
-  color: $accent;
+  color: $accent !important;
 
   &::after {
     content: '';
