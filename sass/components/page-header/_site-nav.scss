@@ -1,0 +1,209 @@
+.page-header {
+  position: relative;
+  border-bottom: 1px solid #ececec;
+}
+
+.site-nav,
+.contact-nav {
+  @extend %list;
+  @include font(500, 18px, 1.16, 0.02em);
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+
+    @include font(500, 14px, 1.14, 0.02em);
+  }
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @media screen and (max-width: 767px) {
+    height: 60px;
+  }
+
+  @media screen and (min-width: 768px) {
+    max-height: 80px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    justify-content: center;
+  }
+}
+
+.menu-container {
+  background-color: #fff;
+
+  @media screen and (max-width: 767px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  text-align: center;
+  font-size: 20px;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.16), 0px 2px 4px rgba(0, 0, 0, 0.08),
+      0px 4px 8px rgba(0, 0, 0, 0.04);
+
+    &.is-open {
+      display: block;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+}
+
+.site-nav {
+  @media screen and (min-width: 768px) {
+    margin-left: 81px;
+    @include font(500, 14px, 1.14, 0.02em);
+  }
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 85px;
+  }
+
+  .link {
+    @extend %link-decoration;
+    position: relative;
+    display: inline-block;
+    color: $primary-text-color;
+
+    @media screen and (min-width: 768px) {
+      padding-top: 32px;
+      padding-bottom: 32px;
+    }
+  }
+
+  transition: $cubic;
+
+  &:hover,
+  &:focus {
+    color: $accent;
+  }
+}
+
+.current {
+  color: $accent;
+
+  &::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    border-radius: 2px;
+    background-color: $accent;
+    opacity: 1;
+
+    @media screen and (min-width: 768px) {
+      bottom: 0;
+    }
+  }
+}
+
+.item {
+  @media screen and (min-width: 768px) {
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      padding-bottom: 40px;
+    }
+
+    &:nth-child(1) {
+      padding-bottom: 52px;
+    }
+  }
+}
+
+.contact-nav {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    flex-wrap: nowrap;
+    margin-top: 21px;
+    margin-bottom: 21px;
+    @include font(500, 12px, 1.16, 0.02em);
+  }
+
+  @media screen and (min-width: 768px) {
+    flex-wrap: wrap;
+    margin-left: 84px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 305px;
+  }
+
+  .unit {
+    @media screen and (min-width: 1200px) {
+      padding-top: 32px;
+      padding-bottom: 32px;
+
+      &:not(:last-child) {
+        padding-right: 30px;
+      }
+    }
+
+    &:not(:last-child) {
+      @media screen and (max-width: 767px) {
+        margin-bottom: 16px;
+      }
+      @media screen and (min-width: 768px) and (max-width: 1199px) {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+
+.link {
+  &:not(:last-child) {
+    padding-bottom: 16px;
+  }
+  @extend %link-decoration;
+  display: flex;
+  align-items: center;
+  color: $secondary-text-color;
+  transition: $cubic;
+
+  &:hover,
+  &:focus {
+    color: $accent;
+    --color3: $accent;
+  }
+
+  @media screen and (max-width: 767px) {
+    display: inline-flex;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.nav-image {
+  margin-right: 10px;
+  fill: currentColor;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-right: 8px;
+  }
+}

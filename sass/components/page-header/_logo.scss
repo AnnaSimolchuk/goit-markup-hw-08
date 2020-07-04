@@ -1,0 +1,15 @@
+.main-logo {
+  @extend %link-decoration;
+}
+
+.logo {
+  color: $accent;
+  font-family: Raleway, sans-serif;
+  @include font(700, 24px, 1.19);
+}
+
+.logo-two {
+  color: $primary-text-color;
+  font-family: Raleway, sans-serif;
+  @include font(700, 24px, 1.19);
+}

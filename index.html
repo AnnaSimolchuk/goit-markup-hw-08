@@ -24,6 +24,20 @@
             <span class="logo-two">Studio</span></a
           >
         </div>
+
+        <button
+        type="button" 
+        class="menu-button is-open"
+        aria-controls="menu-container"
+        data-menu-button
+        aria-expanded="false">
+          <svg class="menu-icon" width="40" height="40" aria-label="Переключатель мобильного меню">
+          <use class="icon-burger" href="./images/sprite.svg#burger"></use>
+          <use class="icon-mobclose" href="./images/sprite.svg#mobclose"></use>
+        </svg>
+      </button>
+
+      <div class="menu-container" id="menu-container" data-menu>
         <nav>
           <div class="site-navigation">
             <ul class="site-nav list" title="nav">
@@ -40,7 +54,7 @@
 
         <div class="contacts">
           <ul class="contact-nav list">
-            <li class="item">
+            <li class="unit">
               <a href="mailto:info@devstudio.com" class="link">
                 <svg class="nav-image" width="16" height="11">
                   <use href="./images/sprite.svg#envelope"></use>
@@ -48,7 +62,7 @@
                 info@devstudio.com</a>
             </li>
 
-            <li class="item">
+            <li class="unit">
               <a href="callto:+380961111111" class="link"
                 ><svg class="nav-image" width="10" height="15">
                   <use href="./images/sprite.svg#phone"></use></svg
@@ -57,6 +71,7 @@
             </li>
           </ul>
         </div>
+      </div>
       </div>
     </header>
 
@@ -132,7 +147,7 @@
       </section>
 
       <!-- Section Work -->
-      <section class="section">
+      <section class="section work">
         <div class="container">
           <h2 class="section-title">Чем мы занимаемся</h2>
           <ul class="work-list">
@@ -483,5 +498,6 @@
           </div>
         </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

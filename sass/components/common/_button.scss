@@ -1,0 +1,32 @@
+// Burger menu
+.menu-button {
+  display: inline-flex;
+  padding: 0;
+  margin: 0;
+  border: none;
+  background-color: transparent;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.menu-button {
+  .icon-mobclose {
+    display: none;
+  }
+
+  &.is-open {
+    .icon-mobclose {
+      display: block;
+    }
+    .icon-burger {
+      display: none;
+    }
+  }
+
+  &:hover .menu-icon,
+  &:focus .menu-icon {
+    fill: $accent;
+  }
+}
