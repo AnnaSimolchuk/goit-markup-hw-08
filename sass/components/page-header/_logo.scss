@@ -1,5 +1,6 @@
 .main-logo {
   @extend %link-decoration;
+  display: flex;
 }
 
 .logo {
