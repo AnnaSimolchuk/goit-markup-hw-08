@@ -1,5 +1,5 @@
 .site-nav,
-.contact-nav {
+.contact-nav, .benefits {
   padding: 0;
   margin: 0;
   list-style: none;
@@ -432,6 +432,7 @@ img {
   margin-right: auto;
   text-align: center;
   min-height: 400px;
+  margin-bottom: 60px;
 }
 
 @media screen and (min-width: 480px) {
@@ -517,6 +518,92 @@ img {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url(../images/hero-desk@2x.jpg);
     background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/hero-desk@2x.jpg);
   }
+}
+
+@media screen and (min-width: 768px) {
+  .benefits {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.benefits .title {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  color: #212121;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 767px) {
+  .benefits .title {
+    text-align: center;
+  }
+}
+
+.benefits .text {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #757575;
+  font-weight: 14px;
+  font-size: 1.7;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+}
+
+@media screen and (max-width: 767px) {
+  .benefit-item {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .benefit-item:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .benefit-item {
+    width: calc((100% - 2 * 30px) / 2);
+  }
+  .benefit-item:nth-child(2n + 1) {
+    margin-right: 30px;
+  }
+  .benefit-item:nth-child(-n + 2) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .benefit-item {
+    width: calc((100% - 8 * 15px) / 4);
+    margin: 0;
+  }
+  .benefit-item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.benefit-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 25px 102px;
+  height: 120px;
+  width: 100%;
+  background-color: #f5f4fa;
+  border-radius: 4px;
 }
 
 @media (max-width: 1199px) {
