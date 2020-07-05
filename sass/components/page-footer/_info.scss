@@ -1,0 +1,40 @@
+.info-list,
+.contact-list {
+  @extend %list;
+}
+
+.info-list {
+  display: inline-block;
+
+  .address {
+    margin-top: 20px;
+
+    .map {
+      @extend %link-decoration;
+      color: $white-text-color;
+      @include font(400, 14px, 1.7);
+    }
+  }
+}
+
+.contact-list {
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 60px;
+  }
+
+  .footer-info {
+    @extend %link-decoration;
+    color: $footer-text-color;
+    @include font(400, 14px, 1.7);
+  }
+
+  .contact:not(:last-child) {
+    margin-top: 8px;
+    margin-bottom: 8px;
+
+    @media screen and (min-width: $desktop) {
+      margin-top: 9px;
+      margin-bottom: 9px;
+    }
+  }
+}

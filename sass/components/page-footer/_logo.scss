@@ -1,0 +1,15 @@
+.full-logo {
+  @extend %link-decoration;
+}
+
+.footer-logo {
+  color: $accent;
+  font-family: Raleway, sans-serif;
+  @include font(900, 22px, 1.18);
+}
+
+.footer-logo-two {
+  color: $white-text-color;
+  font-family: Raleway, sans-serif;
+  @include font(900, 22px, 1.18);
+}

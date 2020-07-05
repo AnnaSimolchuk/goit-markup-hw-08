@@ -1,0 +1,38 @@
+.secondary-footer .logos-list {
+  @extend %list;
+  display: flex;
+  justify-content: center;
+
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 60px;
+  }
+}
+
+.footer-text {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: $white-text-color;
+  @include font(700, 14px, 1.7, 0.03em);
+  text-transform: uppercase;
+}
+
+.logos-list {
+  .logo-img:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  .logo-link {
+    @include centeredFlex;
+    width: 44px;
+    height: 44px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+
+    transition: background-color 250ms $cubic;
+
+    &:hover,
+    &:focus {
+      background-color: $accent;
+    }
+  }
+}

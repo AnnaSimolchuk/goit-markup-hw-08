@@ -45,3 +45,27 @@
   cursor: pointer;
   border: transparent;
 }
+
+// Footer button
+.icon-send {
+  display: inline-flex;
+  align-items: center;
+  text-align: center;
+  min-width: 200px;
+  min-height: 50px;
+  border-radius: 4px;
+  padding: 10px 29px;
+  min-width: 200px;
+
+  background-color: $accent;
+  color: $white-text-color;
+  font-family: Roboto, sans-serif;
+  @include font(900, 16px, 1.9, 0.06em);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  border: transparent;
+
+  .submit {
+    margin-left: 10px;
+  }
+}
