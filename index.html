@@ -85,7 +85,7 @@
       </section>
 
       <!-- Section Benefits -->
-      <section class="section-no-padding">
+      <section class="section-no-padding advantage">
         <div class="container">
           <h2 class="visually-hidden">Преимущества</h2>
           <ul class="benefits">
@@ -95,7 +95,7 @@
                   <use href=./images/sprite.svg#tarelka></use> 
                 </svg>
               </div>
-              <h3 class="title">Внимание к деталям</h3>
+              <h3 class="benefit-title">Внимание к деталям</h3>
               <p class="text">
                 Идейные соображения, а также начало повседневной работы по
                 формированию позиции.
@@ -108,7 +108,7 @@
                   <use href=./images/sprite.svg#clock1></use> 
                 </svg>
               </div>
-              <h3 class="title">Пунктуальность</h3>
+              <h3 class="benefit-title">Пунктуальность</h3>
               <p class="text">
                 Задача организации, в особенности же рамки и место обучения
                 кадров влечет за собой.
@@ -121,7 +121,7 @@
                   <use href=./images/sprite.svg#diagram1></use> 
                 </svg>
               </div>
-              <h3 class="title">Планирование</h3>
+              <h3 class="benefit-title">Планирование</h3>
               <p class="text">
                 Равным образом консультация с широким активом в значительной
                 степени обуславливает.
@@ -134,7 +134,7 @@
                   <use href=./images/sprite.svg#astronaut1></use> 
                 </svg>
               </div>
-              <h3 class="title">Современные технологии</h3>
+              <h3 class="benefit-title">Современные технологии</h3>
               <p class="text">
                 Значимость этих проблем настолько очевидна, что реализация
                 плановых заданий.
@@ -185,12 +185,23 @@
           <h2 class="section-title-padding">Наша команда</h2>
           <ul class="team-list">
             <li class="member">
-              <img
-                src="./images/Nikolay.jpg"
-                alt="фото Николая"
-                width="270"
-                height="260"
-              />
+              <picture>
+                  <source srcset="
+                  ./images/Nikolay-mob.jpg   1x,
+                  ./images/Nikolay-mob@2x.jpg 2x" 
+                  media="(max-width: 767px)" />
+                <source srcset="
+                  ./images/Nikolay-tablet.jpg   1x,
+                  ./images/Nikolay-tablet@2x.jpg 2x"
+                  media="(max-width: 1199px)" />
+                <source srcset="
+                    ./images/Nikolay-desk.jpg   1x,
+                    ./images/Nikolay-desk@2x.jpg 2x"
+                    media="(min-width: 1200px)" />
+                <img class="photos" src="./images/Nikolay-mob.jpg"
+                 alt="фото Николая" />
+              </picture>
+
               <h3 class="name">Николай Кучеренко</h3>
               <p class="role">Product Designer</p>
               <ul class="logo-list">
@@ -221,12 +232,23 @@
             </li>
 
             <li class="member">
-              <img
-                src="./images/Olga.jpg"
-                alt="фото Ольги"
-                width="270"
-                height="260"
-              />
+              <picture>
+                  <source srcset="
+                  ./images/Olga-mob.jpg   1x,
+                  ./images/Olga-mob@2x.jpg 2x" 
+                  media="(max-width: 767px)" />
+                <source srcset="
+                  ./images/Olga-tablet.jpg   1x,
+                  ./images/Olga-tablet@2x.jpg 2x"
+                  media="(max-width: 1199px)" />
+                <source srcset="
+                    ./images/Olga-desk.jpg   1x,
+                    ./images/Olga-desk@2x.jpg 2x"
+                    media="(min-width: 1200px)" />
+                <img class="photos" src="./images/Olga-mob.jpg"
+                 alt="фото Ольги" />
+              </picture>
+
               <h3 class="name">Ольга Иванова</h3>
               <p class="role">Frontend Developer</p>
               <ul class="logo-list">
@@ -257,12 +279,23 @@
             </li>
 
             <li class="member">
-              <img
-                src="./images/Andrew.jpg"
-                alt="фото Андрея"
-                width="270"
-                height="260"
-              />
+              <picture>
+                  <source srcset="
+                  ./images/Andrew-mob.jpg   1x,
+                  ./images/Andrew-mob@2x.jpg 2x" 
+                  media="(max-width: 767px)" />
+                <source srcset="
+                  ./images/Andrew-tablet.jpg   1x,
+                  ./images/Andrew-tablet@2x.jpg 2x"
+                  media="(max-width: 1199px)" />
+                <source srcset="
+                    ./images/Andrew-desk.jpg   1x,
+                    ./images/Andrew-desk@2x.jpg 2x"
+                    media="(min-width: 1200px)" />
+                <img class="photos" src="./images/Andrew-mob.jpg"
+                 alt="фото Андрея" />
+              </picture>
+
               <h3 class="name">Андрей Шевченко</h3>
               <p class="role">Marketing</p>
               <ul class="logo-list">
@@ -293,12 +326,23 @@
             </li>
 
             <li class="member">
-              <img
-                src="./images/Ivan.jpg"
-                alt="фото Ивана"
-                width="270"
-                height="260"
-              />
+              <picture>
+                  <source srcset="
+                  ./images/Ivan-mob.jpg   1x,
+                  ./images/Ivan-mob@2x.jpg 2x" 
+                  media="(max-width: 767px)" />
+                <source srcset="
+                  ./images/Ivan-tablet.jpg   1x,
+                  ./images/Ivan-tablet@2x.jpg 2x"
+                  media="(max-width: 1199px)" />
+                <source srcset="
+                    ./images/Ivan-desk.jpg   1x,
+                    ./images/Ivan-desk@2x.jpg 2x"
+                    media="(min-width: 1200px)" />
+                <img class="photos" src="./images/Ivan-mob.jpg"
+                 alt="фото Ивана" />
+              </picture>
+
               <h3 class="name">Иван Николаев</h3>
               <p class="role">UI Designer</p>
               <ul class="logo-list">

@@ -1,3 +1,9 @@
+.advantage {
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 60px;
+  }
+}
+
 .benefits {
   @extend %list;
 
@@ -6,7 +12,7 @@
     flex-wrap: wrap;
   }
 
-  .title {
+  .benefit-title {
     margin-top: 30px;
     margin-bottom: 10px;
     color: $primary-text-color;
@@ -22,7 +28,7 @@
     margin-bottom: 0;
 
     color: $secondary-text-color;
-    @include font(14px, 1.7);
+    @include font(400, 14px, 1.7);
   }
 }
 

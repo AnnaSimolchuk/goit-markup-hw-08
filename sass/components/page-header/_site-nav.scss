@@ -92,7 +92,7 @@
     }
   }
 
-  transition: $cubic;
+  transition: all 250ms $cubic;
 
   &:hover,
   &:focus {
@@ -185,7 +185,7 @@
   display: flex;
   align-items: center;
   color: $secondary-text-color;
-  transition: $cubic;
+  transition: all 250ms $cubic;
 
   &:hover,
   &:focus {
