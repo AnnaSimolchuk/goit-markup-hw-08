@@ -1,5 +1,5 @@
 .site-nav,
-.contact-nav, .benefits {
+.contact-nav, .benefits, .work-list {
   padding: 0;
   margin: 0;
   list-style: none;
@@ -610,6 +610,49 @@ img {
   .work {
     display: none;
   }
+}
+
+.section-title {
+  margin-top: 0px;
+  margin-bottom: 50px;
+  text-align: center;
+  color: #212121;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+}
+
+.work-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.work-list .list {
+  position: relative;
+}
+
+.work-list .list:not(:last-child) {
+  margin-right: 30px;
+}
+
+.title {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  margin: 0;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  color: #ffffff;
+  background: rgba(47, 48, 58, 0.8);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .backdrop.is-hidden {
