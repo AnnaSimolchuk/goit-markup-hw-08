@@ -852,6 +852,14 @@ footer {
       flex-wrap: wrap;
 }
 
+@media screen and (max-width: 1199px) {
+  .works-list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .works-list .examples:not(:last-child) {
   margin-bottom: 30px;
 }
