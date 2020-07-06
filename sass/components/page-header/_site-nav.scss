@@ -35,6 +35,7 @@
 
 .menu-container {
   background-color: #fff;
+  z-index: 1;
 
   @media screen and (max-width: 767px) {
     padding-top: 60px;
