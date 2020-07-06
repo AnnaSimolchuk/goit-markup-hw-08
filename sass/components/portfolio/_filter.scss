@@ -15,13 +15,9 @@
   @media screen and (min-width: $tablet) and (max-width: 1199px) {
     margin-bottom: 30px;
   }
-
-  @media screen and (min-width: $desktop) {
-    margin-bottom: 50px;
-  }
 }
 
-.unit:not(:last-child) {
+.unit {
   &:not(:last-child) {
     margin-right: 8px;
   }

@@ -813,18 +813,12 @@ footer {
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .portfolio-list {
-    margin-bottom: 50px;
-  }
-}
-
-.unit:not(:last-child):not(:last-child) {
+.unit:not(:last-child) {
   margin-right: 8px;
 }
 
 @media screen and (max-width: 767px) {
-  .unit:not(:last-child):not(:last-child) {
+  .unit:not(:last-child) {
     margin-bottom: 15px;
   }
 }
